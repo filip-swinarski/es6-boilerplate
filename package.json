@@ -1,0 +1,38 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "es6 modules and browserify",
+  "main": "js/es6/main.js",
+  "scripts": {
+    "test": "mocha --require babel-core/register",
+    "babel": "babel js/es6/main.js --out-file js/main.js",
+    "watch-js": "watchify js/es6/main.js -d -o js/main.js ",
+    "browsersync": "browser-sync start --server --files \"css/*.css, *html, *js/*.js\"",
+    "start": "npm run browsersync & npm run watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "browsersync": "0.0.1-security",
+    "chai": "^3.5.0",
+    "exorcist": "^0.4.0",
+    "mocha": "^3.2.0",
+    "watchify": "^3.8.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ],
+    "presets": [
+      "es2015"
+    ]
+  }
+}
