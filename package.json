@@ -9,6 +9,7 @@
     "watch-js": "watchify js/es6/main.js -d -o js/main.js ",
     "watch-css": "node-sass --watch --source-map true css/main.scss css/main.css --output-style=compact",
     "browsersync": "browser-sync start --server --files \"css/*.css, *html, *js/*.js\"",
+    "uglify": "uglifyjs js/main.js -c -m > js/main.min.js",
     "start": "npm run watch-js"
   },
   "author": "Filip Swinarski",
@@ -27,6 +28,7 @@
     "exorcist": "^0.4.0",
     "mocha": "^3.2.0",
     "node-sass": "^4.1.1",
+    "uglify-js": "^2.7.5",
     "watchify": "^3.8.0"
   },
   "browserify": {
