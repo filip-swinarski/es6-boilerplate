@@ -34,11 +34,6 @@
   "browserify": {
     "transform": [
       "babelify"
-    ],
-    "presets": [
-      "es2015",
-      "es2016",
-      "es2017"
     ]
   }
 }
