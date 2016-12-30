@@ -23,6 +23,7 @@
     "babel-preset-es2017": "^6.16.0",
     "babel-register": "^6.18.0",
     "babelify": "^7.3.0",
+    "browser-sync": "^2.18.5",
     "browserify": "^13.1.1",
     "browsersync": "0.0.1-security",
     "chai": "^3.5.0",
@@ -36,5 +37,14 @@
     "transform": [
       "babelify"
     ]
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filip-swinarski/es6-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/filip-swinarski/es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/filip-swinarski/es6-boilerplate#readme"
 }
