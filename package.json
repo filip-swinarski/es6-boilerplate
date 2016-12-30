@@ -8,9 +8,9 @@
     "babel": "babel js/es6/main.js --out-file js/main.js",
     "watch-js": "watchify js/es6/main.js -d -o js/main.js ",
     "browsersync": "browser-sync start --server --files \"css/*.css, *html, *js/*.js\"",
-    "start": "npm run browsersync & npm run watch"
+    "start": "npm run watch-js"
   },
-  "author": "",
+  "author": "Filip Swinarski",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -32,7 +32,9 @@
       "babelify"
     ],
     "presets": [
-      "es2015"
+      "es2015",
+      "es2016",
+      "es2017"
     ]
   }
 }

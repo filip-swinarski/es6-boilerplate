@@ -7,7 +7,7 @@ import {foo} from '../modules/foo.js';
 let assert = chai.assert;
 let expect = chai.expect;
 let should = chai.should();
-let n = 2;
+let n = 6;
 
 describe('foo function', () => {
     
